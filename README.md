@@ -1,9 +1,9 @@
-# Earth VulnHub CTF Walkthrough 🚀
+# Earth VulnHub CTF Walkthrough
 
-## 🎯 Objective
+##  Objective
 Penetration test the "Earth" virtual machine from VulnHub using Kali Linux. Identify, exploit, and escalate privileges to root through reconnaissance, web application analysis, decryption, and privilege escalation techniques.
 
-## 🛠️ Tools & Techniques
+##  Tools & Techniques
 - Kali Linux
 - arp-scan
 - Nmap (default, version, full port)
@@ -13,7 +13,7 @@ Penetration test the "Earth" virtual machine from VulnHub using Kali Linux. Iden
 - ltrace (privilege escalation debugging)
 - Linux command-line basics (cat, whoami, chmod, etc.)
 
-## 🔍 Summary of Steps
+##  Summary of Steps
 
 ### 1. Network Discovery
 - Used `sudo arp-scan -l` to find the IP of the Earth VM.
@@ -53,15 +53,15 @@ Penetration test the "Earth" virtual machine from VulnHub using Kali Linux. Iden
 - Switched user to root, confirmed with `whoami`
 - Captured final flag
 
-## 📝 Lessons Learned
+## Lessons Learned
 - XOR decryption via CyberChef
 - Importance of enumerating virtual hosts
 - Using tools like ltrace to debug binary behavior
 - SUID exploration and reverse shell management
 
-## 🔗 Resources
+## Resources
 - [Earth VulnHub VM](https://download.vulnhub.com/theplanets/Earth.ova)
 - [Walkthrough Guide](https://medium.com/@wiktorderda/vulnhub-the-planets-earth-ctf-4d4acfeb1428)
 
-## 📁 Full Walkthrough
+## Full Walkthrough
 See `docs/full-walkthrough.md` for detailed step-by-step documentation.
